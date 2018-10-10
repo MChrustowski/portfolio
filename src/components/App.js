@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { connect } from "react-redux";
 
 import reactIcon from "../assets/images/react-icon.png";
+import "../assets/styles/main.css";
 
 const App = props => {
   return (
@@ -10,7 +11,9 @@ const App = props => {
       <img src={reactIcon} alt="React logo" />
       <Header>React Redux Starter</Header>
       {props.posts.map(post => (
-        <div key={post.id}>{post.title}</div>
+        <div key={post.id} id="list-element">
+          {post.title}
+        </div>
       ))}
     </Container>
   );
@@ -34,5 +37,7 @@ const Container = styled.div`
 const Header = styled.div`
   color: red;
   font-size: 30px;
+  font-family: Arial;
   text-align: center;
+  margin: 10px;
 `;

@@ -1,8 +1,8 @@
 const ADD_POST = "ADD_POST";
 
 const initialState = [
-  { id: 1, title: "First post" },
-  { id: 2, title: "Second post" },
+  { id: 1, title: "Redux test post 1" },
+  { id: 2, title: "Redux test post 2" },
 ];
 
 const posts = (state = initialState, action) => {
