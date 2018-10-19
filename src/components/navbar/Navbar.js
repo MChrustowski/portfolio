@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 import Logo from "./Logo";
+import NavLink from "./NavLink";
 
 class Navbar extends Component {
   render() {
@@ -9,10 +10,10 @@ class Navbar extends Component {
       <NavbarContainer>
         <Logo />
         <NavbarElementsContainer>
-          <div>O mnie</div>
-          <div>Projekty</div>
-          <div>Doświadczenie</div>
-          <div>Kontakt</div>
+          <NavLink name="O MNIE" url="o-mnie" />
+          <NavLink name="PROJEKTY" url="projekty" />
+          <NavLink name="DOŚWIADCZENIE" url="doswiadczenie" />
+          <NavLink name="KONTAKT" url="kontakt" />
         </NavbarElementsContainer>
       </NavbarContainer>
     );
@@ -34,7 +35,4 @@ const NavbarContainer = styled.div`
 
 const NavbarElementsContainer = styled.div`
   display: flex;
-  div {
-    margin-left: 1em;
-  }
 `;

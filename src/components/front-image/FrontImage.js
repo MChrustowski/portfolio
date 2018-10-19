@@ -9,7 +9,7 @@ class FrontImage extends Component {
       <Image>
         <img src={backgroundImage} alt="front image" />
         <TextContainer>
-          <p>Hello, I'm Michal</p>
+          <p>HELLO I'M MICHAL!</p>
         </TextContainer>
       </Image>
     );
@@ -43,23 +43,23 @@ const TextContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 100vh;
   p {
     text-align: center;
     font-size: 3em;
     color: #ffffff;
-    padding: 20px;
-    border: 2px solid #ffffff;
+    padding: 0.4em;
+    margin-bottom: 5em;
+    border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.1);
+    font-family: "Unica One", cursive;
   }
 
   @media screen and (max-width: 500px) {
     p {
       text-align: center;
-      font-size: 1.5em;
+      font-size: 1.7em;
       color: #ffffff;
-      padding: 10px;
-      border: 2px solid #ffffff;
     }
   }
 `;
