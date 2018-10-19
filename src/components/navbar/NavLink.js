@@ -4,15 +4,13 @@ import styled from "styled-components";
 
 export default ({ name, url }) => {
   return (
-    <div>
-      <LinkStyle smooth to={`/#${url}`}>
-        {name}
-      </LinkStyle>
-    </div>
+    <LinkStyle smooth to={`/#${url}`}>
+      <p>{name}</p>
+    </LinkStyle>
   );
 };
 
-const LinkStyle = styled(Link)`
+export const LinkStyle = styled(Link)`
   font-family: "Armata", sans-serif;
   font-size: 1.1em;
   margin-left: 1.5em;
