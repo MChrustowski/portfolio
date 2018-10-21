@@ -10,7 +10,7 @@ class Navbar extends Component {
       <NavbarContainer>
         <Logo />
         <NavbarElementsContainer>
-          <NavLink name="O MNIE" url="o-mnie" />
+          <NavLink name="ABOUT ME" url="about-me" />
           <NavLink name="PROJEKTY" url="projekty" />
           <NavLink name="DOŚWIADCZENIE" url="doswiadczenie" />
           <NavLink name="KONTAKT" url="kontakt" />

@@ -1,8 +1,8 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import NavLink from "../../../src/components/navbar/NavLink";
-import { LinkStyle } from "../../../src/components/navbar/NavLink";
+import NavLink from "../../../src/components/presentional/navbar/NavLink";
+import { LinkStyle } from "../../../src/components/presentional/navbar/NavLink";
 
 let wrapped;
 

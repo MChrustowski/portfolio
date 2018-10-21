@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import Logo from "../../../src/components/navbar/Logo";
+import Logo from "../../../src/components/presentional/navbar/Logo";
 import logoImageSrc from "../../../src/assets/images/logo.png";
 
 let wrapped;

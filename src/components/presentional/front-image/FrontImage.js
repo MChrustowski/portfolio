@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-import backgroundImage from "../../assets/images/background.jpg";
+import backgroundImage from "../../../assets/images/background.jpg";
 
 class FrontImage extends Component {
   render() {

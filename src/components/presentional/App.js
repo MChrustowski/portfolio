@@ -1,17 +1,19 @@
 import React from "react";
 
-import "../assets/styles/main.css";
+import "../../assets/styles/main.css";
 import Navbar from "./navbar/Navbar";
 import FrontImage from "./front-image/FrontImage";
+
+import AboutMe from "./about-me/AboutMe";
 
 const App = props => {
   return (
     <div>
       <Navbar />
       <FrontImage />
-      <div style={{ backgroundColor: "#ffffff" }}>
-        <div id="o-mnie" style={{ height: "100vh", color: "red" }}>
-          O mnie
+      <div style={{ backgroundColor: "#f9f9f9" }}>
+        <div id="about-me">
+          <AboutMe />
         </div>
         <div id="projekty" style={{ height: "100vh", color: "red" }}>
           Projekty

@@ -14,12 +14,12 @@ export const LinkStyle = styled(Link)`
   font-family: "Armata", sans-serif;
   font-size: 1.1em;
   margin-left: 1.5em;
-  padding-bottom: 5px;
+
   color: #ffffff;
 
   &:hover {
     color: #ffffff;
     text-decoration: none;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px dashed #ffffff;
   }
 `;
