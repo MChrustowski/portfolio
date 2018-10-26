@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+import Header from "../ui/Header";
 import TechItem from "./TechItem";
 
 export default () => {
@@ -56,7 +57,7 @@ export default () => {
   ];
   return (
     <Container>
-      <h2>TECHNOLOGIES</h2>
+      <Header>TECHNOLOGIES</Header>
       <table className="table">
         <tbody>
           {technologies.map(item => (
@@ -78,9 +79,7 @@ const Container = styled.div`
   margin-top: 2em;
   text-align: center;
   font-family: "Armata", sans-serif;
-  h2 {
-    margin-bottom: 0.7em;
-  }
+
   i {
     font-size: 1.5em;
   }

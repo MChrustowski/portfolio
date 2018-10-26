@@ -5,6 +5,7 @@ import Navbar from "./navbar/Navbar";
 import FrontImage from "./front-image/FrontImage";
 
 import AboutMe from "./about-me/AboutMe";
+import Projects from "./projects/Projects";
 
 const App = props => {
   return (
@@ -15,8 +16,8 @@ const App = props => {
         <div id="about-me">
           <AboutMe />
         </div>
-        <div id="projekty" style={{ height: "100vh", color: "red" }}>
-          Projekty
+        <div id="projects">
+          <Projects />
         </div>
         <div id="doswiadczenie" style={{ height: "100vh", color: "red" }}>
           Doświadczenie
