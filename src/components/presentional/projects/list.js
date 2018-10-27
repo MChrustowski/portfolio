@@ -1,4 +1,12 @@
 import workoutPlannerLogo from "../../../assets/images/projects/workout-planner/logo.png";
+import todoListLogo from "../../../assets/images/projects/todo-list/logo.png";
+import jobOffersLogo from "../../../assets/images/projects/job-offers/logo.png";
+import jobOffersApiLogo from "../../../assets/images/projects/job-offers/logo-api.png";
+import blogNewsLogo from "../../../assets/images/projects/blog-news/logo.png";
+import digitalClockLogo from "../../../assets/images/projects/digital-clock/logo.png";
+import passwordGeneratorLogo from "../../../assets/images/projects/password-generator/logo.png";
+import todoLocalstorageLogo from "../../../assets/images/projects/todo-localstorage/logo.png";
+import videoPlayerLogo from "../../../assets/images/projects/video-player/logo.png";
 
 const technologies = {
   html: {
@@ -52,7 +60,7 @@ const projects = [
   {
     name: "ToDo List",
     description: "",
-    logo: "",
+    logo: todoListLogo,
     technologies: [technologies.js, technologies.react, technologies.android],
     url: "https://github.com/MChrustowski/react_native_todo",
     order: 2,
@@ -60,7 +68,7 @@ const projects = [
   {
     name: "JobOffers",
     description: "",
-    logo: "",
+    logo: jobOffersLogo,
     technologies: [
       technologies.html,
       technologies.css,
@@ -73,7 +81,7 @@ const projects = [
   {
     name: "JobOffers API",
     description: "",
-    logo: "",
+    logo: jobOffersApiLogo,
     technologies: [technologies.ruby, technologies.ror],
     url: "https://github.com/MChrustowski/job_offers_api",
     order: 4,
@@ -81,7 +89,7 @@ const projects = [
   {
     name: "BlogNEWS",
     description: "",
-    logo: "",
+    logo: blogNewsLogo,
     technologies: [
       technologies.html,
       technologies.css,
@@ -94,7 +102,7 @@ const projects = [
   {
     name: "Digital Clock",
     description: "",
-    logo: "",
+    logo: digitalClockLogo,
     technologies: [technologies.html, technologies.css, technologies.js],
     url: "https://github.com/MChrustowski/PureJsProjects",
     order: 6,
@@ -102,7 +110,7 @@ const projects = [
   {
     name: "Password Generator",
     description: "",
-    logo: "",
+    logo: passwordGeneratorLogo,
     technologies: [technologies.html, technologies.css, technologies.js],
     url: "https://github.com/MChrustowski/PureJsProjects",
     order: 7,
@@ -110,7 +118,7 @@ const projects = [
   {
     name: "ToDo (localStorage)",
     description: "",
-    logo: "",
+    logo: todoLocalstorageLogo,
     technologies: [technologies.html, technologies.css, technologies.js],
     url: "https://github.com/MChrustowski/PureJsProjects",
     order: 8,
@@ -118,7 +126,7 @@ const projects = [
   {
     name: "Video Player",
     description: "",
-    logo: "",
+    logo: videoPlayerLogo,
     technologies: [technologies.html, technologies.css, technologies.js],
     url: "https://github.com/MChrustowski/PureJsProjects",
     order: 9,

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import Particles from "react-particles-js";
 
+import particlesConfiguration from "./particles-confifuration";
 import backgroundImage from "../../../assets/images/background.jpg";
 
 class FrontImage extends Component {
@@ -8,9 +10,11 @@ class FrontImage extends Component {
     return (
       <Image>
         <img src={backgroundImage} alt="front image" />
-        <TextContainer>
-          <p>HELLO I'M MICHAL!</p>
-        </TextContainer>
+        <Particles
+          width="100vw"
+          height="100vh"
+          params={particlesConfiguration}
+        />
       </Image>
     );
   }
@@ -19,6 +23,7 @@ class FrontImage extends Component {
 export default FrontImage;
 
 const Image = styled.div`
+  height: 100vh;
   img {
     position: absolute;
     z-index: -1;
@@ -35,31 +40,6 @@ const Image = styled.div`
     img {
       left: 50%;
       margin-left: -512px;
-    }
-  }
-`;
-
-const TextContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  p {
-    text-align: center;
-    font-size: 3em;
-    color: #ffffff;
-    padding: 0.4em;
-    margin-bottom: 5em;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
-    font-family: "Unica One", cursive;
-  }
-
-  @media screen and (max-width: 500px) {
-    p {
-      text-align: center;
-      font-size: 1.7em;
-      color: #ffffff;
     }
   }
 `;

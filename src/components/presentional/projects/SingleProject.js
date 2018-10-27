@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import "../../../assets/styles/animations.css";
+
 export default props => {
   const {
     name,
@@ -20,7 +22,7 @@ export default props => {
       onMouseLeave={handleMouseEvent.bind(this, 0)}
       onMouse={projectShortInformations}>
       {displayShortInformations === order ? (
-        <div>
+        <div className="fadeIn">
           <h4>{name}</h4>
           <TechContainer>
             {technologies.map(t => (
