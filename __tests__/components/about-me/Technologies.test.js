@@ -3,6 +3,7 @@ import { shallow } from "enzyme";
 
 import Technologies from "../../../src/components/presentional/about-me/Technologies";
 import TechItem from "../../../src/components/presentional/about-me/TechItem";
+import Header from "../../../src/components/presentional/ui/Header";
 
 let wrapped;
 
@@ -12,8 +13,8 @@ describe("<Technologies />", () => {
   });
 
   it("shows header", () => {
-    expect(wrapped.find("h2").length).toEqual(1);
-    expect(wrapped.find("h2").text()).toEqual("TECHNOLOGIES");
+    expect(wrapped.find(Header).length).toEqual(1);
+    expect(wrapped.find(Header).prop("children")).toEqual("TECHNOLOGIES");
   });
 
   it("shows table with items", () => {

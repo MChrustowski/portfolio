@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import Particles from "react-particles-js";
 
-import particlesConfiguration from "./particles-confifuration";
+import particlesConfiguration from "./particles-configuration";
 import backgroundImage from "../../../assets/images/background.jpg";
 
 class FrontImage extends Component {
@@ -10,11 +10,7 @@ class FrontImage extends Component {
     return (
       <Image>
         <img src={backgroundImage} alt="front image" />
-        <Particles
-          width="100vw"
-          height="100vh"
-          params={particlesConfiguration}
-        />
+        <Particles params={particlesConfiguration} />
       </Image>
     );
   }

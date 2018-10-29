@@ -10,3 +10,5 @@ const H2 = styled.h2`
   text-align: center;
   font-family: "Armata", sans-serif;
 `;
+
+export { H2 };
