@@ -42,6 +42,8 @@
   "dependencies": {
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-image-gallery": "^0.8.12",
+    "react-modal": "^3.6.1",
     "react-particles-js": "^2.3.0",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",

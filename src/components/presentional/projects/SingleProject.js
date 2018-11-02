@@ -13,6 +13,7 @@ export default props => {
     order,
     handleMouseEvent,
     displayShortInformations,
+    openModal,
   } = props;
 
   const projectShortInformations = order === displayShortInformations;
@@ -22,7 +23,7 @@ export default props => {
       onMouseLeave={handleMouseEvent.bind(this, 0)}
       onMouse={projectShortInformations}>
       {displayShortInformations === order ? (
-        <div className="fadeIn">
+        <div onClick={openModal} className="fadeIn">
           <h4>{name}</h4>
           <TechContainer>
             {technologies.map(t => (
