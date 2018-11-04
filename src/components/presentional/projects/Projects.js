@@ -6,6 +6,9 @@ import Modal from "../ui/Modal";
 import { projects } from "./list";
 import Header from "../ui/Header";
 import SingleProject from "./SingleProject";
+import Gallery from "./single-project/Gallery";
+import ProjectButton from "./single-project/ProjectButton";
+import Description from "./single-project/Description";
 
 class Projects extends Component {
   constructor(props) {
@@ -37,13 +40,14 @@ class Projects extends Component {
             modalIsOpen={modalIsOpen}
             openModal={openModal}
             closeModal={closeModal}
+            project={project}
           />
         ))}
       </ListContainer>
     );
   }
   render() {
-    const { modalIsOpen, closeModal } = this.props;
+    const { modalIsOpen, closeModal, project } = this.props;
     return (
       <div className="container">
         <div className="row">
@@ -54,7 +58,14 @@ class Projects extends Component {
             </Container>
             {modalIsOpen && (
               <Modal modalIsOpen={modalIsOpen} closeModal={closeModal}>
-                ahaasd aksdja lkdlksa dklsa sdkla kl
+                <Gallery screenshots={project.screenshots} />
+                <Description
+                  name={project.name}
+                  description={project.description}
+                  technologies={project.technologies}
+                  libraries={project.libraries}
+                />
+                <ProjectButton url={project.url} />
               </Modal>
             )}
           </div>

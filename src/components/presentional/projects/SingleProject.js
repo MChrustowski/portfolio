@@ -6,14 +6,13 @@ import "../../../assets/styles/animations.css";
 export default props => {
   const {
     name,
-    description,
     logo,
     technologies,
-    url,
     order,
     handleMouseEvent,
     displayShortInformations,
     openModal,
+    project,
   } = props;
 
   const projectShortInformations = order === displayShortInformations;
@@ -23,13 +22,14 @@ export default props => {
       onMouseLeave={handleMouseEvent.bind(this, 0)}
       onMouse={projectShortInformations}>
       {displayShortInformations === order ? (
-        <div onClick={openModal} className="fadeIn">
+        <div onClick={openModal.bind(this, project)} className="fadeIn">
           <h4>{name}</h4>
           <TechContainer>
             {technologies.map(t => (
               <i className={t.icon} />
             ))}
           </TechContainer>
+          <ReadMore>Read more...</ReadMore>
         </div>
       ) : (
         <img src={logo} alt="logo" className="img-fluid" />
@@ -67,4 +67,11 @@ const TechContainer = styled.div`
     font-size: 1.2em;
     margin: 0.2em;
   }
+`;
+
+const ReadMore = styled.div`
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 0.7em;
+  color: #0086ff;
 `;

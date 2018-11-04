@@ -8,6 +8,13 @@ import passwordGeneratorLogo from "../../../assets/images/projects/password-gene
 import todoLocalstorageLogo from "../../../assets/images/projects/todo-localstorage/logo.png";
 import videoPlayerLogo from "../../../assets/images/projects/video-player/logo.png";
 
+import WP1 from "../../../assets/images/projects/workout-planner/1.png";
+import WP1m from "../../../assets/images/projects/workout-planner/1_m.png";
+import WP2 from "../../../assets/images/projects/workout-planner/2.png";
+import WP2m from "../../../assets/images/projects/workout-planner/2_m.png";
+import WP3 from "../../../assets/images/projects/workout-planner/3.png";
+import WP3m from "../../../assets/images/projects/workout-planner/3_m.png";
+
 const technologies = {
   html: {
     name: "HTML",
@@ -50,9 +57,32 @@ const technologies = {
 const projects = [
   {
     name: "Workout Planner",
-    description: "",
+    description:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+    screenshots: [
+      {
+        original: WP1,
+        thumbnail: WP1m,
+      },
+      {
+        original: WP2,
+        thumbnail: WP2m,
+      },
+      {
+        original: WP3,
+        thumbnail: WP3m,
+      },
+    ],
     logo: workoutPlannerLogo,
     technologies: [technologies.js, technologies.react, technologies.android],
+    libraries: [
+      "redux",
+      "redux-persist",
+      "redux-thunk",
+      "native-base",
+      "react-native-elements",
+      "react-native-material-tabs",
+    ],
     url:
       "https://play.google.com/store/apps/details?id=com.codeman.workoutplanner",
     order: 1,

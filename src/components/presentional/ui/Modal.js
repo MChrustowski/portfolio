@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ReactModal from "react-modal";
 
 import styled from "styled-components";
+import "../../../assets/styles/animations.css";
 
 class Modal extends Component {
   render() {
@@ -10,11 +11,10 @@ class Modal extends Component {
       <ReactModal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        style={styles}
-        contentLabel="Example Modal">
-        <div className="row justify-content-md-center">
-          <div className="col col-lg-6">
-            <Container>{children}</Container>
+        style={styles}>
+        <div className="row justify-content-md-center ">
+          <div className="col col-lg-8">
+            <Container className="fadeInUpBig">{children}</Container>
           </div>
         </div>
       </ReactModal>
@@ -26,7 +26,6 @@ export default Modal;
 
 const Container = styled.div`
   background-color: #fff;
-  padding: 1em;
 `;
 
 const styles = {
@@ -40,10 +39,10 @@ const styles = {
   },
   content: {
     position: "absolute",
-    top: "40px",
+    top: "10px",
     left: "40px",
     right: "40px",
-    bottom: "40px",
+    bottom: "20px",
     background: "transparent",
     border: 0,
     overflow: "auto",

@@ -6,23 +6,26 @@ export default Component => {
       super(props);
       this.state = {
         modalIsOpen: false,
+        project: {},
       };
 
       this.openModal = this.openModal.bind(this);
       this.closeModal = this.closeModal.bind(this);
     }
-    openModal() {
-      this.setState({ modalIsOpen: true });
+    openModal(project) {
+      this.setState({ project, modalIsOpen: true });
     }
     closeModal() {
-      this.setState({ modalIsOpen: false });
+      this.setState({ project: {}, modalIsOpen: false });
     }
     render() {
+      console.log(this.state.project);
       return (
         <Component
           modalIsOpen={this.state.modalIsOpen}
           openModal={this.openModal}
           closeModal={this.closeModal}
+          project={this.state.project}
         />
       );
     }
