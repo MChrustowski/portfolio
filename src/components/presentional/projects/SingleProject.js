@@ -21,7 +21,7 @@ export default props => {
       onMouseEnter={handleMouseEvent.bind(this, order)}
       onMouseLeave={handleMouseEvent.bind(this, 0)}
       onMouse={projectShortInformations}>
-      {displayShortInformations === order ? (
+      {projectShortInformations ? (
         <div onClick={openModal.bind(this, project)} className="fadeIn">
           <h4>{name}</h4>
           <TechContainer>
@@ -75,3 +75,5 @@ const ReadMore = styled.div`
   margin-top: 0.7em;
   color: #0086ff;
 `;
+
+export { Container };

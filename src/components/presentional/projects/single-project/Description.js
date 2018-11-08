@@ -21,6 +21,8 @@ export default props => {
   );
 };
 
+export { Title, Icons, Description };
+
 const Container = styled.div`
   margin: 1em;
   margin-bottom: 0;

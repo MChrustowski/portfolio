@@ -1,15 +1,18 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { mount } from "enzyme";
 
 import Projects from "../../../src/components/presentional/projects/Projects";
-import SingleProject from "../../../src/components/presentional/projects/SingleProject";
+import SingleProject, {
+  Container,
+} from "../../../src/components/presentional/projects/SingleProject";
 import Header from "../../../src/components/presentional/ui/Header";
+import Gallery from "../../../src/components/presentional/projects/single-project/Gallery";
 
 let wrapped;
 
 describe("<Projects />", () => {
   beforeEach(() => {
-    wrapped = shallow(<Projects />);
+    wrapped = mount(<Projects />);
   });
 
   it("shows <Header> component", () => {
