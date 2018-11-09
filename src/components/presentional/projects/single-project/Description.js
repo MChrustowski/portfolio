@@ -11,7 +11,7 @@ export default props => {
         <Title>{name}</Title>
         <Icons>
           {technologies.map(t => (
-            <i className={t.icon} />
+            <i key={t.icon} className={t.icon} />
           ))}
         </Icons>
       </TitleTechContainer>

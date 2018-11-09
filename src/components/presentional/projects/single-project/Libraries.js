@@ -8,12 +8,14 @@ export default props => {
       <Header>Additional libraries</Header>
       <LibrariesContainer>
         {libraries.map(name => (
-          <LibraryTag>{name}</LibraryTag>
+          <LibraryTag key={name}>{name}</LibraryTag>
         ))}
       </LibrariesContainer>
     </Container>
   );
 };
+
+export { Header, LibraryTag };
 
 const Container = styled.div`
   margin-top: 2em;

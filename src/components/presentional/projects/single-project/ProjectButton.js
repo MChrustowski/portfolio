@@ -4,7 +4,6 @@ import styled from "styled-components";
 export default props => {
   const { url } = props;
   const isGitHubLink = url.includes("github.com");
-  console.log("isgithub", isGitHubLink);
   return (
     <Button
       className="btn btn-block"
@@ -14,12 +13,13 @@ export default props => {
           : { backgroundColor: "#3EBB00" }
       }>
       <a href={url} target="_blank">
-        {" "}
         {isGitHubLink ? "GitHub" : "Google Play"}
       </a>
     </Button>
   );
 };
+
+export { Button };
 
 const Button = styled.button`
   font-family: "Armata", sans-serif;

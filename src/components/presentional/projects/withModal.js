@@ -19,7 +19,6 @@ export default Component => {
       this.setState({ project: {}, modalIsOpen: false });
     }
     render() {
-      console.log(this.state.project);
       return (
         <Component
           modalIsOpen={this.state.modalIsOpen}
