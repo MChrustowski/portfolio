@@ -6,11 +6,9 @@ import SingleProject, {
   Container,
 } from "../../../src/components/presentional/projects/SingleProject";
 import Header from "../../../src/components/presentional/ui/Header";
-import Gallery from "../../../src/components/presentional/projects/single-project/Gallery";
-
-let wrapped;
 
 describe("<Projects />", () => {
+  let wrapped;
   beforeEach(() => {
     wrapped = mount(<Projects />);
   });

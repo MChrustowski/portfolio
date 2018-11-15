@@ -16,7 +16,7 @@ export default props => {
         </Icons>
       </TitleTechContainer>
       <Description>{description}</Description>
-      <Libraries libraries={libraries} />
+      {libraries && <Libraries libraries={libraries} />}
     </Container>
   );
 };

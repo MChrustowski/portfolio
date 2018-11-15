@@ -58,7 +58,10 @@ class Projects extends Component {
             </Container>
             {modalIsOpen && (
               <Modal modalIsOpen={modalIsOpen} closeModal={closeModal}>
-                <Gallery screenshots={project.screenshots} />
+                <Gallery
+                  screenshots={project.screenshots}
+                  closeModal={closeModal}
+                />
                 <Description
                   name={project.name}
                   description={project.description}

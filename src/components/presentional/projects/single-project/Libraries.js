@@ -18,7 +18,7 @@ export default props => {
 export { Header, LibraryTag };
 
 const Container = styled.div`
-  margin-top: 2em;
+  margin-top: 4em;
 `;
 
 const Header = styled.div`

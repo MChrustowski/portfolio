@@ -9,11 +9,39 @@ import todoLocalstorageLogo from "../../../assets/images/projects/todo-localstor
 import videoPlayerLogo from "../../../assets/images/projects/video-player/logo.png";
 
 import WP1 from "../../../assets/images/projects/workout-planner/1.png";
-import WP1m from "../../../assets/images/projects/workout-planner/1_m.png";
 import WP2 from "../../../assets/images/projects/workout-planner/2.png";
-import WP2m from "../../../assets/images/projects/workout-planner/2_m.png";
 import WP3 from "../../../assets/images/projects/workout-planner/3.png";
-import WP3m from "../../../assets/images/projects/workout-planner/3_m.png";
+
+import TD1 from "../../../assets/images/projects/todo-list/1.png";
+import TD2 from "../../../assets/images/projects/todo-list/2.png";
+
+import JO1 from "../../../assets/images/projects/job-offers/1.png";
+import JO2 from "../../../assets/images/projects/job-offers/2.png";
+import JO3 from "../../../assets/images/projects/job-offers/3.png";
+import JO4 from "../../../assets/images/projects/job-offers/4.png";
+import JO5 from "../../../assets/images/projects/job-offers/5.png";
+import JO6 from "../../../assets/images/projects/job-offers/6.png";
+import JO7 from "../../../assets/images/projects/job-offers/7.png";
+import JOA1 from "../../../assets/images/projects/job-offers/1API.png";
+
+import BN1 from "../../../assets/images/projects/blog-news/1.png";
+import BN2 from "../../../assets/images/projects/blog-news/2.png";
+import BN3 from "../../../assets/images/projects/blog-news/3.png";
+
+import DC1 from "../../../assets/images/projects/digital-clock/1.png";
+import DC2 from "../../../assets/images/projects/digital-clock/2.png";
+import DC3 from "../../../assets/images/projects/digital-clock/3.png";
+import DC4 from "../../../assets/images/projects/digital-clock/4.png";
+
+import PG1 from "../../../assets/images/projects/password-generator/1.png";
+import PG2 from "../../../assets/images/projects/password-generator/2.png";
+
+import TDL1 from "../../../assets/images/projects/todo-localstorage/1.png";
+import TDL2 from "../../../assets/images/projects/todo-localstorage/2.png";
+import TDL3 from "../../../assets/images/projects/todo-localstorage/3.png";
+
+import VP1 from "../../../assets/images/projects/video-player/1.png";
+import VP2 from "../../../assets/images/projects/video-player/2.png";
 
 const technologies = {
   html: {
@@ -58,19 +86,17 @@ const projects = [
   {
     name: "Workout Planner",
     description:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+      "It's application for people who training at the gym. The main aim of app is adding workouts and following progress. After sign up, user can calculate BMI and BMR indicator and add supplements log. The main feature of WorkoutPlanner is adding workouts and assigning training series to them. Additionally user has access to extensive statistics. WorkoutPlanner app was published in Google Play Store, so you can click button below and download application.",
+
     screenshots: [
       {
         original: WP1,
-        thumbnail: WP1m,
       },
       {
         original: WP2,
-        thumbnail: WP2m,
       },
       {
         original: WP3,
-        thumbnail: WP3m,
       },
     ],
     logo: workoutPlannerLogo,
@@ -89,15 +115,55 @@ const projects = [
   },
   {
     name: "ToDo List",
-    description: "",
+    description:
+      "Simple to-do list app, consisted of classical functionalities. It's my first React Native application.",
+    screenshots: [
+      {
+        original: TD1,
+      },
+      {
+        original: TD2,
+      },
+    ],
     logo: todoListLogo,
     technologies: [technologies.js, technologies.react, technologies.android],
+    libraries: [
+      "redux",
+      "redux-persist",
+      "redux-thunk",
+      "native-base",
+      "lodash",
+    ],
     url: "https://github.com/MChrustowski/react_native_todo",
     order: 2,
   },
   {
     name: "JobOffers",
-    description: "",
+    description:
+      "Application designated for employers and people who looking for a job in IT branch. Employers have the option of adding offers, whereas employees can apply for the specific positions. Administrator panel contains many statistics based on informations added by users. JobOffers app entirely was written in ReactJS + Redux. REST API was created in Ruby on Rails.",
+    screenshots: [
+      {
+        original: JO1,
+      },
+      {
+        original: JO2,
+      },
+      {
+        original: JO3,
+      },
+      {
+        original: JO4,
+      },
+      {
+        original: JO5,
+      },
+      {
+        original: JO6,
+      },
+      {
+        original: JO7,
+      },
+    ],
     logo: jobOffersLogo,
     technologies: [
       technologies.html,
@@ -105,20 +171,52 @@ const projects = [
       technologies.js,
       technologies.react,
     ],
+    libraries: [
+      "redux",
+      "react-router-dom",
+      "styled-components",
+      "axios",
+      "chart.js",
+      "react-google-maps",
+    ],
     url: "https://github.com/MChrustowski/job_offers_app",
     order: 3,
   },
   {
     name: "JobOffers API",
-    description: "",
+    description: "REST API created for needs of Job Offers app.",
+    screenshots: [
+      {
+        original: JOA1,
+      },
+    ],
     logo: jobOffersApiLogo,
     technologies: [technologies.ruby, technologies.ror],
+    libraries: [
+      "devise",
+      "carrierwave",
+      "simple_token_authentication",
+      "friendly_id",
+      "jbuilder",
+    ],
     url: "https://github.com/MChrustowski/job_offers_api",
     order: 4,
   },
   {
     name: "BlogNEWS",
-    description: "",
+    description:
+      "This is my first individual application written in ReactJS after a summer internship at the Binar :: Apps office. The main purpose while creating this application was consolidation of informations obtained during internship + creation REST API based on Ruby on Rails. BlogNews has classical functionalities of blog: creating categories, subcategories, posts and adding comments by user.",
+    screenshots: [
+      {
+        original: BN1,
+      },
+      {
+        original: BN2,
+      },
+      {
+        original: BN3,
+      },
+    ],
     logo: blogNewsLogo,
     technologies: [
       technologies.html,
@@ -126,12 +224,34 @@ const projects = [
       technologies.js,
       technologies.react,
     ],
+    libraries: [
+      "redux",
+      "react-router",
+      "styled-components",
+      "react-toastify",
+      "react-ckeditor-wrapper",
+    ],
     url: "https://github.com/MChrustowski/react_blog",
     order: 5,
   },
   {
     name: "Digital Clock",
-    description: "",
+    description:
+      "Application written in pure JavaScript. Digital Clock contains three modes: clock, stopwatch and timer. The website is compatible with RWD.",
+    screenshots: [
+      {
+        original: DC1,
+      },
+      {
+        original: DC2,
+      },
+      {
+        original: DC3,
+      },
+      {
+        original: DC4,
+      },
+    ],
     logo: digitalClockLogo,
     technologies: [technologies.html, technologies.css, technologies.js],
     url: "https://github.com/MChrustowski/PureJsProjects",
@@ -139,25 +259,58 @@ const projects = [
   },
   {
     name: "Password Generator",
-    description: "",
+    description:
+      "Application written in pure JavaScript. The main goal is to generate passwords with the assumed criteria. The website is compatible with RWD.",
+    screenshots: [
+      {
+        original: PG1,
+      },
+      {
+        original: PG2,
+      },
+    ],
     logo: passwordGeneratorLogo,
     technologies: [technologies.html, technologies.css, technologies.js],
+
     url: "https://github.com/MChrustowski/PureJsProjects",
     order: 7,
   },
   {
     name: "ToDo (localStorage)",
-    description: "",
+    description:
+      "Application written in pure JavaScript. Classical to-do list based on browser local storage. The website is compatible with RWD.",
+    screenshots: [
+      {
+        original: TDL1,
+      },
+      {
+        original: TDL2,
+      },
+      {
+        original: TDL3,
+      },
+    ],
     logo: todoLocalstorageLogo,
     technologies: [technologies.html, technologies.css, technologies.js],
+
     url: "https://github.com/MChrustowski/PureJsProjects",
     order: 8,
   },
   {
     name: "Video Player",
-    description: "",
+    description:
+      "Application written in pure JavaScript. Video Player contains all necessary functionalities.",
+    screenshots: [
+      {
+        original: VP1,
+      },
+      {
+        original: VP2,
+      },
+    ],
     logo: videoPlayerLogo,
     technologies: [technologies.html, technologies.css, technologies.js],
+
     url: "https://github.com/MChrustowski/PureJsProjects",
     order: 9,
   },
