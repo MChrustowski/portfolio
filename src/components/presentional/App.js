@@ -6,6 +6,7 @@ import FrontImage from "./front-image/FrontImage";
 
 import AboutMe from "./about-me/AboutMe";
 import Projects from "./projects/Projects";
+import Footer from "./footer/Footer";
 
 const App = props => {
   return (
@@ -19,8 +20,8 @@ const App = props => {
         <div id="projects">
           <Projects />
         </div>
-        <div id="doswiadczenie" style={{ height: "100vh", color: "red" }}>
-          Doświadczenie
+        <div>
+          <Footer />
         </div>
       </div>
     </div>
