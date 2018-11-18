@@ -42,3 +42,87 @@
     transform: translate3d(0, 2000px, 0);
   }
 }
+
+.fadeInDown {
+  background-color: rgba(43, 43, 43, 0.9);
+  animation-name: fadeInDown;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+@keyframes fadeInDown {
+  0% {
+    background-color: transparent;
+  }
+  10% {
+    background-color: rgba(43, 43, 43, 0.1);
+  }
+  20% {
+    background-color: rgba(43, 43, 43, 0.2);
+  }
+  30% {
+    background-color: rgba(43, 43, 43, 0.25);
+  }
+  40% {
+    background-color: rgba(43, 43, 43, 0.3);
+  }
+  50% {
+    background-color: rgba(43, 43, 43, 0.4);
+  }
+  60% {
+    background-color: rgba(43, 43, 43, 0.5);
+  }
+  70% {
+    background-color: rgba(43, 43, 43, 0.6);
+  }
+  80% {
+    background-color: rgba(43, 43, 43, 0.7);
+  }
+  90% {
+    background-color: rgba(43, 43, 43, 0.8);
+  }
+  100% {
+    background-color: rgba(43, 43, 43, 0.9);
+  }
+}
+
+.fadeOutUp {
+  background-color: rgba(43, 43, 43, 0.9);
+  animation-name: fadeOutUp;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+@keyframes fadeOutUp {
+  0% {
+    background-color: rgba(43, 43, 43, 0.9);
+  }
+  10% {
+    background-color: rgba(43, 43, 43, 0.8);
+  }
+  20% {
+    background-color: rgba(43, 43, 43, 0.7);
+  }
+  30% {
+    background-color: rgba(43, 43, 43, 0.6);
+  }
+  40% {
+    background-color: rgba(43, 43, 43, 0.5);
+  }
+  50% {
+    background-color: rgba(43, 43, 43, 0.4);
+  }
+  60% {
+    background-color: rgba(43, 43, 43, 0.3);
+  }
+  70% {
+    background-color: rgba(43, 43, 43, 0.25);
+  }
+  80% {
+    background-color: rgba(43, 43, 43, 0.2);
+  }
+  90% {
+    background-color: rgba(43, 43, 43, 0.1);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
