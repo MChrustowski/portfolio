@@ -8,15 +8,22 @@ export default () => {
         <div className="row justify-content-md-center">
           <div className="col col-lg-8">
             <Text>
-              MADE IN POLAND 🇵🇱
+              Copyright © {new Date().getFullYear()}
               <br />
-              MICHAŁ CHRUSTOWSKI
+              Michał Chrustowski
             </Text>
           </div>
           <div className="col col-lg-3">
             <SocialIcons>
-              <i className="fab fa-github" />
-              <i className="fab fa-linkedin-in" />
+              <a href="mailto:chrustowski.m@gmail.com">
+                <i className="fas fa-envelope-square" />
+              </a>
+              <a href="https://github.com/mchrustowski" target="_blank">
+                <i className="fab fa-github" />
+              </a>
+              <a href="#" target="_blank">
+                <i className="fab fa-linkedin-in" />
+              </a>
             </SocialIcons>
           </div>
         </div>
@@ -27,7 +34,7 @@ export default () => {
 
 const Container = styled.div`
   background-color: #ffffff;
-  padding: 15px 0 15px 0;
+  padding: 20px 0 20px 0;
   margin-top: 3em;
   box-shadow: 0px 0px 6px 0px rgba(229, 229, 229, 0.5);
 `;

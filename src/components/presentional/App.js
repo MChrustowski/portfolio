@@ -6,6 +6,7 @@ import FrontImage from "./front-image/FrontImage";
 
 import AboutMe from "./about-me/AboutMe";
 import Projects from "./projects/Projects";
+import Contact from "./contact/Contact";
 import Footer from "./footer/Footer";
 
 const App = props => {
@@ -19,6 +20,9 @@ const App = props => {
         </div>
         <div id="projects">
           <Projects />
+        </div>
+        <div id="contact">
+          <Contact />
         </div>
         <div>
           <Footer />
