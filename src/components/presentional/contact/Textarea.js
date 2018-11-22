@@ -21,4 +21,5 @@ const TextareaStyled = styled.textarea`
   border: 1px solid #ececec;
   border-radius: 5px;
   font-family: "Armata", sans-serif;
+  font-size: 0.9em;
 `;

@@ -28,7 +28,7 @@ export default props => {
           <h4>{name}</h4>
           <TechContainer>
             {technologies.map(t => (
-              <i className={t.icon} />
+              <i key={t.icon} className={t.icon} />
             ))}
           </TechContainer>
           <ReadMore>Read more...</ReadMore>
@@ -42,7 +42,7 @@ export default props => {
 
 const Container = styled.div`
   padding: 1.5em;
-  margin: 1em;
+  margin: 0.5em;
   background-color: #ffffff;
   width: 20em;
   height: 10em;
@@ -56,6 +56,17 @@ const Container = styled.div`
     background-color: rgba(43, 43, 43, 0.9);
     color: #ffffff;
   }
+
+  @media only screen and (max-width: 767px) {
+    width: 14em;
+    height: 7em;
+    /* margin: 5px; */
+  }
+  @media only screen and (max-width: 497px) {
+    width: 22em;
+    height: 11em;
+    margin: 5px;
+  }
 `;
 
 const MoreInformationsContainer = styled.div`
@@ -65,6 +76,20 @@ const MoreInformationsContainer = styled.div`
   flex-direction: column;
   width: 20em;
   height: 10em;
+  @media only screen and (max-width: 767px) {
+    width: 14em;
+    height: 7em;
+    h4 {
+      font-size: 1em;
+    }
+  }
+  @media only screen and (max-width: 497px) {
+    width: 22em;
+    height: 11em;
+    h4 {
+      font-size: 1.5em;
+    }
+  }
 `;
 
 const TechContainer = styled.div`
@@ -73,6 +98,18 @@ const TechContainer = styled.div`
   i {
     font-size: 1.2em;
     margin: 0.2em;
+  }
+  @media only screen and (max-width: 767px) {
+    i {
+      font-size: 1em;
+      margin: 0.2em;
+    }
+  }
+  @media only screen and (max-width: 497px) {
+    i {
+      font-size: 1.4em;
+      margin: 0.2em;
+    }
   }
 `;
 
@@ -107,6 +144,15 @@ const ReadMore = styled.button`
         transform: scale3d(1, 1, 1);
       }
     }
+  }
+
+  @media only screen and (max-width: 767px) {
+    padding: 0.3em 1em;
+    font-size: 0.7em;
+  }
+  @media only screen and (max-width: 497px) {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
   }
 `;
 

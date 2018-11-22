@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import Header from "../ui/Header";
 import Input from "./Input";
@@ -31,7 +34,24 @@ class Contact extends React.Component {
     const { email, content } = this.state;
 
     if (email && content) {
-      console.log(this.state);
+      axios
+        .post("https://formcarry.com/s/wugGTOpLY0g", this.state, {
+          headers: { Accept: "application/json" },
+        })
+        .then(response => {
+          this.setState({
+            email: "",
+            content: "",
+          });
+          return toast.success("Thanks, the message was sent!", {
+            position: toast.POSITION.BOTTOM_CENTER,
+          });
+        })
+        .catch(error => {
+          return toast.error(error.message, {
+            position: toast.POSITION.BOTTOM_CENTER,
+          });
+        });
     }
   }
 
@@ -42,6 +62,15 @@ class Contact extends React.Component {
         <div className="row justify-content-md-center">
           <div className="col col-lg-8">
             <Container>
+              <ToastContainer
+                position="bottom-center"
+                type="info"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                pauseOnHover
+              />
               <Header>CONTACT</Header>
               <form onSubmit={this.handleSubmit}>
                 <Input

@@ -22,6 +22,7 @@ export const LinkStyle = styled(Link)`
   &:hover {
     color: #ffffff;
     text-decoration: none;
-    border: 1px solid #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    transition: border 0.6s linear;
   }
 `;

@@ -22,7 +22,6 @@ export default () => {
 
 const Container = styled.div`
   margin-top: 2em;
-
   text-align: center;
   font-family: "Armata", sans-serif;
   img {
@@ -36,4 +35,7 @@ const Container = styled.div`
     line-height: 2;
     font-size: 1em;
   }
+  /* @media only screen and (max-width: 990px) {
+    width: 100%;
+  } */
 `;

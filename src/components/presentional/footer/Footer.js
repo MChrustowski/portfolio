@@ -16,7 +16,7 @@ export default () => {
           <div className="col col-lg-3">
             <SocialIcons>
               <a href="mailto:chrustowski.m@gmail.com">
-                <i className="fas fa-envelope-square" />
+                <i className="fas fa-envelope" />
               </a>
               <a href="https://github.com/mchrustowski" target="_blank">
                 <i className="fab fa-github" />
