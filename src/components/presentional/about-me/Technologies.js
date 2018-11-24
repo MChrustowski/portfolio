@@ -83,4 +83,7 @@ const Container = styled.div`
   i {
     font-size: 1.5em;
   }
+  /* @media only screen and (max-width: 660px) {
+    
+  } */
 `;

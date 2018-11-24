@@ -19,6 +19,9 @@ export { Header, LibraryTag };
 
 const Container = styled.div`
   margin-top: 4em;
+  @media only screen and (max-width: 500px) {
+    margin-top: 2em;
+  }
 `;
 
 const Header = styled.div`
@@ -26,6 +29,9 @@ const Header = styled.div`
   font-size: 1.3em;
   font-weight: bold;
   margin-bottom: 0.5em;
+  @media only screen and (max-width: 500px) {
+    font-size: 1.1em;
+  }
 `;
 
 const LibrariesContainer = styled.div`
@@ -41,4 +47,8 @@ const LibraryTag = styled.div`
   border-radius: 5px;
   margin: 0.3em;
   font-size: 0.8em;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 0.65em;
+  }
 `;

@@ -6,11 +6,11 @@ import Technologies from "./Technologies";
 export default props => {
   return (
     <div className="container">
-      <div className="row justify-content-md-center">
-        <div className="col col-8">
+      <div className="row ">
+        <div className="col-lg-8">
           <ShortInformations />
         </div>
-        <div className="col col-4">
+        <div className="col-lg-4">
           <Technologies />
         </div>
       </div>

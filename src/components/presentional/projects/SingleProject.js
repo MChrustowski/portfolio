@@ -62,7 +62,7 @@ const Container = styled.div`
     height: 7em;
     /* margin: 5px; */
   }
-  @media only screen and (max-width: 497px) {
+  @media only screen and (max-width: 509px) {
     width: 22em;
     height: 11em;
     margin: 5px;
@@ -83,7 +83,7 @@ const MoreInformationsContainer = styled.div`
       font-size: 1em;
     }
   }
-  @media only screen and (max-width: 497px) {
+  @media only screen and (max-width: 509px) {
     width: 22em;
     height: 11em;
     h4 {
@@ -105,7 +105,7 @@ const TechContainer = styled.div`
       margin: 0.2em;
     }
   }
-  @media only screen and (max-width: 497px) {
+  @media only screen and (max-width: 509px) {
     i {
       font-size: 1.4em;
       margin: 0.2em;
@@ -150,7 +150,7 @@ const ReadMore = styled.button`
     padding: 0.3em 1em;
     font-size: 0.7em;
   }
-  @media only screen and (max-width: 497px) {
+  @media only screen and (max-width: 509px) {
     padding: 0.5em 1em;
     font-size: 0.9em;
   }
