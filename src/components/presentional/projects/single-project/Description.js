@@ -53,7 +53,7 @@ const Title = styled.div`
 
 const Description = styled.div`
   text-align: justify;
-  line-height: 1.5;
+  line-height: 2;
   @media only screen and (max-width: 500px) {
     text-align: left;
   }

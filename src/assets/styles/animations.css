@@ -126,3 +126,33 @@
     background-color: transparent;
   }
 }
+
+.slideInDown {
+  animation-name: slideInDown;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.slideOutUp {
+  animation-name: slideOutUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes slideOutUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    visibility: hidden;
+    transform: translateY(-100%);
+  }
+}

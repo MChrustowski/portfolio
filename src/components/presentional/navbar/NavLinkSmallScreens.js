@@ -12,17 +12,13 @@ export default ({ name, url }) => {
 
 export const LinkStyle = styled(Link)`
   font-family: "Armata", sans-serif;
-  font-size: 1em;
-  margin-left: 1.5em;
+  font-size: 2em;
   padding: 5px;
-  border: 1px solid transparent;
   font-weight: bold;
   color: #ffffff;
-
   &:hover {
     color: #ffffff;
     text-decoration: none;
-    border: 1px solid rgba(255, 255, 255, 0.7);
     transition: border 0.6s linear;
   }
 `;

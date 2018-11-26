@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 import logo from "../../../assets/images/logo.png";
 
-export default () => {
+export default ({ zIndex }) => {
   return (
-    <LogoContainer>
+    <LogoContainer style={{ zIndex: zIndex }}>
       <img src={logo} alt="logo" />
     </LogoContainer>
   );
