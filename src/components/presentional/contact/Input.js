@@ -19,6 +19,7 @@ const InputStyled = styled.input`
   outline: 0;
   padding: 0 10px;
   border: 1px solid #ececec;
+  background-color: #ffffff;
   border-radius: 5px;
   font-family: "Armata", sans-serif;
   font-size: 0.9em;

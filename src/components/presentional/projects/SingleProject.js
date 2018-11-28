@@ -34,7 +34,12 @@ export default props => {
           <ReadMore>Read more...</ReadMore>
         </MoreInformationsContainer>
       ) : (
-        <img src={logo} alt="logo" className="img-fluid" />
+        <img
+          src={logo}
+          alt="logo"
+          className="img-fluid"
+          onClick={openModal.bind(this, project)}
+        />
       )}
     </Container>
   );

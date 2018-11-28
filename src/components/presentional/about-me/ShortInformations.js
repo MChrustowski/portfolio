@@ -11,15 +11,15 @@ export default () => {
       <img src={authorImage} alt="Author image" />
       <p>
         Hi, I'm <span>Michał</span>, a front-end developer from{" "}
-        <span>Poland</span>. I'm a geoinformation student and it's my final year
-        of studies. After graduation, I would like to work as full-time web
+        <span>Poland</span>. I'm a geoinformation student, it's my final year of
+        studies. After graduation, I would like to work as full-time web
         developer.{" "}
         <span>
           IT changes everyday, but for today I'm focused on JavaScript and React
           ... Native also :)
         </span>{" "}
         I've launched <span>WorkoutPlanner</span> app, which is trainings log
-        for android users. I'm very happy because app has{" "}
+        for android users. I'm happy because app has{" "}
         <span>over one thousand</span> active users.
       </p>
     </Container>
