@@ -15,11 +15,11 @@ export default () => {
         studies. After graduation, I would like to work as full-time web
         developer.{" "}
         <span>
-          IT changes everyday, but for today I'm focused on JavaScript and React
-          ... Native also :)
-        </span>{" "}
-        I've launched <span>WorkoutPlanner</span> app, which is trainings log
-        for android users. I'm happy because app has{" "}
+          IT changes every day, but for now I'm focused on JavaScript and React
+          (Native also)
+        </span>
+        . I've launched <span>WorkoutPlanner</span> which is a workout log app
+        for android users. I'm glad to say that the app has{" "}
         <span>over one thousand</span> active users.
       </p>
     </Container>

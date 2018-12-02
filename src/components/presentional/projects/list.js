@@ -86,7 +86,7 @@ const projects = [
   {
     name: "Workout Planner",
     description:
-      "It's application for people who training at the gym. The main aim of app is adding workouts and following progress. After sign up, user can calculate BMI and BMR indicator and add supplements log. The main feature of WorkoutPlanner is adding workouts and assigning training series to them. Additionally user has access to extensive statistics. WorkoutPlanner app was published in Google Play Store, so you can click button below and download application.",
+      "It’s an application for people who work out at the gym. The main aim of the app is to record workout sessions and to follow progress. After signing up the user can calculate his BMI and BMR indicator and add a supplements log. The main feature of WorkoutPlanner is assigning training series to particular workout days. Additionally, the user has access to extensive statistics. WorkoutPlanner app was published on Google Play Store.",
 
     screenshots: [
       {
@@ -116,7 +116,7 @@ const projects = [
   {
     name: "ToDo List",
     description:
-      "Simple to-do list app, consisted of classical functionalities. It's my first React Native application.",
+      "This was my first React Native app which has all the classical functionalities of to-do lists.",
     screenshots: [
       {
         original: TD1,
@@ -140,7 +140,7 @@ const projects = [
   {
     name: "JobOffers",
     description:
-      "Application designated for employers and people who looking for a job in IT branch. Employers have the option of adding offers, whereas employees can apply for the specific positions. Administrator panel contains many statistics based on informations added by users. JobOffers app entirely was written in ReactJS + Redux. REST API was created in Ruby on Rails.",
+      "It’s an application designated for employers and people who are looking for a job in the IT branch. Employers have the option of adding offers, whereas employees can apply for the specific positions. Administrator panel contains many statistics based on information added by users. JobOffers app was written entirely in ReactJS + Redux. REST API was created in Ruby on Rails.",
     screenshots: [
       {
         original: JO1,
